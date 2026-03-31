@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+from sklearn.linear_model import LinearRegression
 
 #Q1
 df["Intensity"] = df["Calories_Burned"] / df["Session_Duration (hours)"]

@@ -1,3 +1,5 @@
+# we pasted this in from our group google colab
+
 from google.colab import files
 fitness = files.upload()
 
@@ -92,22 +94,18 @@ plt.show()
 x = df['Session_Duration (hours)'].values
 y = df['Calories_Burned'].values
  
-# Scatter plot of raw data
 plt.scatter(x, y)
 plt.xlabel('Session Duration (hours)')
 plt.ylabel('Calories Burned')
 plt.title('Session Duration vs Calories Burned')
 plt.show()
  
-# Fit the model
 model = LinearRegression(fit_intercept=True)
 model.fit(x[:, np.newaxis], y)
  
-# Predict on smooth range
 xfit = np.linspace(x.min(), x.max(), 1000)
 yfit = model.predict(xfit[:, np.newaxis])
  
-# Plot scatter + best-fit line
 plt.scatter(x, y)
 plt.plot(xfit, yfit, color='red')
 plt.xlabel('Session Duration (hours)')
@@ -115,6 +113,5 @@ plt.ylabel('Calories Burned')
 plt.title('Linear Regression: Calories Burned ~ Session Duration')
 plt.show()
  
-# Print slope and intercept
 print("Model slope:    ", model.coef_[0])
 print("Model intercept:", model.intercept_)

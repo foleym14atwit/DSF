@@ -2,6 +2,7 @@
 https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset?resource=download
 
 How does age affect calories burned?
+
 <img width="649" height="436" alt="image" src="https://github.com/user-attachments/assets/3f172f9e-b6f7-4f69-a03e-724438460509" />
 
 Does experience level influence workout frequency?

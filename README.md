@@ -1,4 +1,5 @@
 # DSF
+-Michael, Ben, Hailin, Ruben
 https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset?resource=download
 
 How does age affect calories burned?
